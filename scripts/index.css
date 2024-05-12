@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+
+body{
+    background-color: black;
+    font-family: 'Sen','san-serif';
+    color: white;
+}
+.navbar{
+    background-color: black;
+    box-shadow: 0px 0px 5px grey;
+}
+.navbar .nav-item a{
+    color: grey;
+    font-family: 'Kanit','san-serif';
+    font-size: 20px;
+    margin-right: 40px;
+}
+.navbar .nav-item a:hover{
+    color: aqua;
+}
+.navbar-brand{
+    margin: 10px 0px;
+    padding: 15px;
+    background-color: rgb(32, 32, 32);
+    box-shadow: 2px 2px 3px aqua;
+    border-radius: 5px;
+    font-size: 30px;
+    font-family: 'Kanit','san-serif';
+    letter-spacing: 2px;
+}
+.head{
+    color: aqua;
+    font-size: 50px;
+}
+#home{
+    margin-top: 170px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+}
+.imagecard img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px grey;
+}
+
+.namecard{
+    height: 80%;
+    padding: 30px;
+    margin-left: -30px;
+    margin-top: 70px;
+    border-radius: 5px;
+    background-color: rgb(31, 31, 31);
+    box-shadow: -2px 2px 4px grey;
+    transition: scale 1s ease 1s;
+}
+.namecard:hover{
+    scale: 1.05;
+}
+.namecard h1{
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    /* font-family: 'Sen',sans-serif; */
+}
+.namecard .h1{
+    color: aqua;
+    font-size: 76px;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+}
+.namecard h2{
+    color: white;
+    font-size: 56px;
+    font-weight: bold;
+    /* font-family: 'Sen',sans-serif; */
+}
+.reveal_left{
+    position: relative;
+    transform: translateX(-80px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  .reveal_left.active{
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .reveal_right{
+    position: relative;
+    transform: translateX(100px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  .reveal_right.active{
+    transform: translateX(0);
+    opacity: 1;
+  }
+#work{
+    margin-top: 100px;
+}
+.workgrid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.workgrid img{
+    width: 100%;
+    opacity: 0.4;
+}
+.workgrid .column1{
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(31, 31, 31);
+}
+#project{
+    margin-top: 100px;
+}
+
+.projectcards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.text1 h1{
+    font-size: 50px;
+}
+.projectcards .card{
+    width: 100%;
+    border: none;
+    background-color: #181823;
+    color: white;
+    border-radius: 0;
+    border-radius: 10px;
+}
+
+/* .projectcards .card p {
+    display: none;
+    position: absolute;
+    font-size: 20px;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white; 
+    padding: 20px;
+    padding-top: 150px;
+    text-align: center;
+    box-sizing: border-box;
+    z-index: 1; 
+    transition: all 1s ease;
+} */
+/* .projectcards .card:hover p {
+    background-color: rgba(0, 0, 0, 0.806);
+    display: block;
+    width: 100%;
+    height: 100%;
+} */
+
+.projectcards .card img{
+    border-radius: 10px 10px 0px 0px;
+    opacity: 0.85;
+}
+.projectcards .card-body{
+    padding: 30px;
+    transition: all 0.3s ease ;
+}
+.projectcards .card-body:hover{
+    color: white;
+    background-color: rgb(60, 60, 60);
+    border-radius: 1px 0px 10px 10px;
+}
+#skills{
+    margin-top: 100px;
+}
+.skill-area{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20%;
+}
+.skill{
+    position: relative;
+    margin-bottom: 40px;
+}
+.skill-title{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.skill-bar{
+    width: 100%;
+    background-color: rgba(138, 138, 138, 0.3);
+    height: 35px;
+    z-index: 1;
+    border-radius: 100px;
+    position: absolute;
+}
+.skill-fill{
+    background: rgb(0, 255, 255);
+    color: black;
+    height: 35px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+    overflow: hidden;
+}
+.skill-percent{
+    font-size: 30px;
+}
+.django{
+    animation: django 2s;
+    width: 50%;
+}
+.html{
+    animation: html 2s;
+    width: 80%;
+}
+.css{
+    animation: css 2s;
+    width: 70%;
+}
+.js{
+    animation: js 2s;
+    width: 50%;
+}
+@keyframes django{
+    from{
+        width: 0;
+    }
+    to{
+        width: 50%;
+    }
+}
+@keyframes html{
+    from{
+        width: 0;
+    }
+    to{
+        width: 80%;
+    }
+}
+@keyframes css{
+    from{
+        width: 0;
+    }
+    to{
+        width: 70%;
+    }
+}
+@keyframes js{
+    from{
+        width: 0;
+    }
+    to{
+        width: 50%;
+    }
+}
