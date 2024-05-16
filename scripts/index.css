@@ -53,7 +53,7 @@ body{
     border-radius: 5px;
     background-color: rgb(31, 31, 31);
     box-shadow: -2px 2px 4px grey;
-    transition: scale 1s ease 1s;
+    transition: scale 1s ease;
 }
 .namecard:hover{
     scale: 1.05;
@@ -62,9 +62,8 @@ body{
     color: white;
     font-size: 70px;
     font-weight: bold;
-    /* font-family: 'Sen',sans-serif; */
 }
-.namecard .h1{
+.namecard .name{
     color: aqua;
     font-size: 76px;
     text-shadow: 1px 1px 3px rgb(0, 0, 0);
@@ -73,34 +72,15 @@ body{
     color: white;
     font-size: 56px;
     font-weight: bold;
-    /* font-family: 'Sen',sans-serif; */
 }
-.reveal_left{
-    position: relative;
-    transform: translateX(-80px);
-    opacity: 0;
-    transition: 1s all ease;
-  }
-  .reveal_left.active{
-    transform: translateX(0);
-    opacity: 1;
-  }
-  .reveal_right{
-    position: relative;
-    transform: translateX(100px);
-    opacity: 0;
-    transition: 1s all ease;
-  }
-  .reveal_right.active{
-    transform: translateX(0);
-    opacity: 1;
-  }
+
 #work{
     margin-top: 100px;
 }
 .workgrid{
     display: grid;
     grid-template-columns: 2fr 1fr;
+    gap: 30px;
 }
 .workgrid img{
     width: 100%;
@@ -110,6 +90,11 @@ body{
     padding: 15px;
     border-radius: 5px;
     background-color: rgb(31, 31, 31);
+    box-shadow: 1px 1px 3px grey;
+    transition: scale 1s ease;
+}
+.workgrid .column1:hover{
+    scale: 1.05;
 }
 #project{
     margin-top: 100px;
@@ -130,32 +115,11 @@ body{
     color: white;
     border-radius: 0;
     border-radius: 10px;
+    transition: scale 1s ease;
 }
-
-/* .projectcards .card p {
-    display: none;
-    position: absolute;
-    font-size: 20px;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); 
-    color: white; 
-    padding: 20px;
-    padding-top: 150px;
-    text-align: center;
-    box-sizing: border-box;
-    z-index: 1; 
-    transition: all 1s ease;
-} */
-/* .projectcards .card:hover p {
-    background-color: rgba(0, 0, 0, 0.806);
-    display: block;
-    width: 100%;
-    height: 100%;
-} */
-
+.projectcards .card:hover{
+    scale: 1.05;
+}
 .projectcards .card img{
     border-radius: 10px 10px 0px 0px;
     opacity: 0.85;
@@ -255,3 +219,116 @@ body{
         width: 50%;
     }
 }
+#contact{
+    margin-top: 100px;
+}
+#contact1{
+    width: 900px;
+}
+.contact{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    justify-content: center;
+}
+.contactcard img{
+    width: 100%;
+    border: 0.1px solid aqua;
+    border-right: none;
+}
+.contactform{
+    border: 0.1px solid aqua;
+    border-left: none;
+    padding: 30px;
+}
+label{
+    font-size: 20px;
+}
+input{
+    margin-top: 10px;
+    height: 40px;
+    width: 100%;
+    background-color: #414141;
+    color: white;
+}
+textarea{
+    margin-top: 10px;
+    height: 80px;
+    width: 100%;
+    background-color: #414141;
+    color: white;
+}
+button{
+    padding: 10px;
+    background-color:#eaeaea;
+    /* color: white; */
+    border: none;
+    border-radius: 5px;
+}
+footer{
+    background-color: #17171f;
+    padding: 40px;
+    margin-top: 100px;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    justify-content: space-between;
+}
+.footer-grid a{
+    color: white;
+    text-decoration: none;
+}
+.footer-grid .links a:hover{
+    color: aqua;
+}
+.footer-grid .icons i{
+    color: white;
+    font-size: 30px;
+    padding-right: 20px;
+}
+
+
+.fixed-icon{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 15px;
+    font-size: 30px;
+    background-color: #2d2d2d;
+    border-radius: 10px;
+}
+.fixed-icon a{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .reveal_left{
+    position: relative;
+    transform: translateX(-80px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  .reveal_left.active{
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .reveal_right{
+    position: relative;
+    transform: translateX(100px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  .reveal_right.active{
+    transform: translateX(0);
+    opacity: 1;
+  } */
